@@ -1,0 +1,25 @@
+.header{
+    width: 100%;
+    height: 100px;
+    float: left;
+    background:#fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header h1{
+    float: left;
+    margin: 31px 0 0;
+}
+.header button{
+    border: 1px solid #DFE2EB;
+    background: none;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 12px;
+    color: #727D94;
+    cursor: pointer;
+    height: 40px;
+    width: 146px;
+    margin-top: 25px;
+}

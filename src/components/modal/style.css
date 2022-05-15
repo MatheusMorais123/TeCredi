@@ -1,0 +1,32 @@
+.content{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .container{
+    background-color: #fff;
+    width:40%;
+    height: 30%;
+    color:#000;
+    border-radius: 10px;
+}
+.content .container .close{
+    background-color: #000;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    right: calc(-100% + 20px);
+    top: -46px;
+    position: relative;
+    cursor: pointer;
+    color:#fff;
+    border: none;
+}
