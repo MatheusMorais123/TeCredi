@@ -4,9 +4,9 @@ import './style.css'
 
 export default function Register() {
 
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [username, setUserName] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [username, setUserName] = useState("");
 
   const addUser = (name, email, username) => {
     fetch("https://jsonplaceholder.typicode.com/users", {
@@ -35,14 +35,14 @@ export default function Register() {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     addUser(name, email, username)
-    e.target.name.value = "";
-    e.target.email.value = "";
-    e.target.username.value = "";
+    setName("");
+    setEmail("");
+    setUserName("");
   }
 
   return (
     <div className="register-container">
-      <div className="content">
+      <div className="content_">
         <section>
           <h1> Cadastro </h1>
           <p>Cadastrar usuários</p>

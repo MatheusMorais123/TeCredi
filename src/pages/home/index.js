@@ -10,7 +10,7 @@ export default function Home() {
     const [itensPerPage, setItensPerPage] = useState(5);
     const [currentPage, setCurrentPage] = useState(0);
     const [isModalVisible, setIsModalVisible] = useState(false);
-
+    const [ascendingSort, setAscendingSort] = useState(true)
     const pages = Math.ceil(users.length / itensPerPage);
 
     const startIndex = currentPage * itensPerPage;
@@ -65,16 +65,18 @@ export default function Home() {
     function sortByName() {
 
         const result = users.sort((a, b) => {
-            if (a.name > b.name) {
-                return 1;
-            }
-            if (a.name < b.name) {
-                return -1;
-            }
-            return 0;
+    
+          if(ascendingSort) {
+            return a.name > b.name ? 1 : -1
+          } else {
+            return a.name > b.name ? -1 : 1
+          }
         });
+    
         setUsers([...result]);
+        setAscendingSort(!ascendingSort)
     };
+    
     return (
         
         <div id="page-home">
