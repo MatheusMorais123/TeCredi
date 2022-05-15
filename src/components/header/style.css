@@ -5,19 +5,22 @@
     background:#fff;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .header h1{
     float: left;
     margin: 31px 0 0;
+    font-weight: 700;
+    color:#1649ff;
 }
 .header button{
-    border: 1px solid #DFE2EB;
+    border: 1px solid #1649ff;
     background: none;
     font-size: 12px;
     font-weight: 700;
     border-radius: 12px;
-    color: #727D94;
+    color: #000;
     cursor: pointer;
     height: 40px;
     width: 146px;

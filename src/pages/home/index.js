@@ -60,7 +60,7 @@ export default function Home() {
     function Todo(id) {
         onGet(id);
         setIsModalVisible(true);
-    }
+    };
 
     function sortByName() {
 
@@ -74,11 +74,15 @@ export default function Home() {
             return 0;
         });
         setUsers([...result]);
-    }
+    };
     return (
+        
         <div id="page-home">
             <Header />
             <div className="container">
+                <h3>
+                    Lista de usuários
+                </h3>
                 <table>
                     <thead>
                         <tr>
@@ -112,6 +116,7 @@ export default function Home() {
                     <Modal onClose={() => setIsModalVisible(false)}>
                         <div className="list">
                             <ul>
+                                <h4>Resumo</h4>
                                 {usersTodos.map((e) => (
                                     <li key={e.id}>
                                         <p>Titulo: {e.title}</p>

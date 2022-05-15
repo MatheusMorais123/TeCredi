@@ -34,13 +34,13 @@
     text-transform: uppercase;
 }
 .container .button-generic{
-    border: 1px solid #DFE2EB;
+    border: 1px solid #1649ff;
     background: none;
     font-size: 12px;
     font-weight: 400;
     border-radius: 20px;
     padding: 7px 20px;
-    color:#727D94;
+    color:#000;
     cursor: pointer;
 }
 .container  td:first-child {

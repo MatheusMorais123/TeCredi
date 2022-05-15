@@ -1,6 +1,6 @@
 .content{
     width: 100%;
-    height: auto;
+    height: 100vw;
     position:absolute;
     top: 0;
     left: 0;
@@ -13,12 +13,14 @@
 .content .container{
     background-color: #fff;
     width:40%;
-    height: 30%;
+    /*height: 30%; */
     color:#000;
     border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #000;
 }
 .content .container .close{
-    background-color: #000;
+    background-color: #0029bb;
     outline: none;
     width: 32px;
     height: 32px;
@@ -29,4 +31,7 @@
     cursor: pointer;
     color:#fff;
     border: none;
+}
+.content .container .box{
+    padding: 10px;
 }
